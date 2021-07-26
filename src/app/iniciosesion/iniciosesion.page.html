@@ -1,22 +1,20 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>iniciosesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="logincontainer">
-    <h1 class="titulo">Iniciar Sesion</h1>
-    <form>
-        <label for="NombreUsuarioL">Nombre de Usuario</label>
-        <input type="text" placeholder="Nombre de usuario">
+    <form #form="ngForm"(submit)="ngOnInit()">
+        <label for="NombreUsuarioL">Correo</label>
+        <input  [(ngModel)]="correo" type="text" placeholder="Correo"  name="correo" required="">
 
-        <label for="ConstraseñaUsuarioL">Contraseña del Usuario</label>
-        <input type="password" placeholder="Contraseña del usuario">
+        <label for="ConstraseñaUsuarioL">Contraseña</label>
+        <input  [(ngModel)]="contra" type="password" placeholder="Contraseña del usuario" name="contra"required="">
 
-        <input type="submit" value="Iniciar Sesion">
+       <button id="enviar">Iniciar Sesion </button>
 
-        <a href="#">Crear una cuenta nueva</a>
+        <a href="/registrarse">Crear una cuenta nueva</a>
     </form>
 </div>
 </ion-content>
