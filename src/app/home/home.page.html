@@ -7,13 +7,34 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Bienvenido a biblioteca UPT para encargo de libros :D</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
 
   <div id="container">
     <h1>Saludos del mundo de la mazana</h1>
   </div>
+  
+  <ion-segment scrollable value="heart">
+    <ion-segment-button value="home">
+      <ion-label>Libros de BD</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-label>Libros de programacion web</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-label>Libros de Frameworks</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="star">
+      <ion-label>Libros de Algoritmos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="call">
+      <ion-label>Libros de hisortia del software</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="globe">
+      <ion-label>¿Donde encontrarlos?</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="basket">
+      <ion-label>Otros</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
 </ion-content>
