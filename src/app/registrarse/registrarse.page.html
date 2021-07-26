@@ -1,27 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registrarse</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true">
 </ion-header>
 
-<ion-content>
-  <div class="logincontainer">
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+<div class="logincontainer">
+
     <h1 class="titulo">Registrar Usuario</h1>
-    <form>
-        <label for="NombreUsuarioL">Nombre de Usuario</label>
-        <input type="text" placeholder="Nombre de usuario">
+    <form #form="ngForm"(submit)="ngOnInit()">
+        <label for="NombreUsuarioL">Apellidos</label>
+        <input type="text"  [(ngModel)]="apellido"name="apellido" placeholder="Apellidos">
+        <label for="NombreUsuarioL">Nombre</label>
+        <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
+        <label for="NombreUsuarioL">Nombre Usuario</label>
+        <input  [(ngModel)]="username" type="text" name=" username" placeholder="Nombre de usuario">
+        <label  for="CorreoR">Correo Electronico</label>
+        <input type="text"  [(ngModel)]="correo" name="correo" placeholder="Correo Electronico">
 
-        <label for="CorreoR">Correo Electronico</label>
-        <input type="password" placeholder="Correo Electronico">
-
-        <label for="ConstraseñaUsuarioR">Contraseña</label>
-        <input type="password" placeholder="Contraseña">
+        <label for="ConstraseñaUsuarioR" >Contraseña</label>
+        <input type="password"  [(ngModel)]="contra" name="contra" placeholder="Contraseña">
 
         <label for="ConstraseñaUsuarioR">Confirmar contraseña</label>
-        <input type="password" placeholder="Contraseña del usuario">
+        <input type="password"  [(ngModel)]="rpassword" name="rpassword" placeholder="Contraseña del usuario">
 
-        <input type="submit" value="Registrar Usuario">
-        <input type="submit" value="Regresar">
+        <button id="enviar">Registrar </button>
+         <a href="/iniciosesion">Regresar</a>
     </form>
 </div>
 </ion-content>
