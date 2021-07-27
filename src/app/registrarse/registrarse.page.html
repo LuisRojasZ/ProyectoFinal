@@ -2,23 +2,21 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-  </ion-header>
+<ion-header collapse="condense">
+</ion-header>
+<h1 class="titulo">Registrar Usuario</h1>
 <div class="logincontainer">
-        <label for="CorreoR">Correo Electronico</label>
-        <input type="text" placeholder="Correo Electronico">
-=======
-    <h1 class="titulo">Registrar Usuario</h1>
-    <form #form="ngForm"(submit)="ngOnInit()">
+<form #form="ngForm"(submit)="ngOnInit()">
         <label for="NombreUsuarioL">Apellidos</label>
         <input type="text"  [(ngModel)]="apellido"name="apellido" placeholder="Apellidos">
+        
         <label for="NombreUsuarioL">Nombre</label>
         <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
         <label for="NombreUsuarioL">Nombre Usuario</label>
+
         <input  [(ngModel)]="username" type="text" name=" username" placeholder="Nombre de usuario">
         <label  for="CorreoR">Correo Electronico</label>
         <input type="text"  [(ngModel)]="correo" name="correo" placeholder="Correo Electronico">
->>>>>>> b83d7779fb932b056e6435b0efbb4526fd21dab5
 
         <label for="ConstraseñaUsuarioR" >Contraseña</label>
         <input type="password"  [(ngModel)]="contra" name="contra" placeholder="Contraseña">

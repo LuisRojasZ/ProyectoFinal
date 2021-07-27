@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+
+  <div class="logincontainer">
+    <h1 class="titulo">Pedidos</h1>
+  <form #form="ngForm"(submit)="ngOnInit()">
+          <label for="NombreUsuarioL">Nombre del libro</label>
+          <input type="text"  [(ngModel)]="apellido"name="apellido" placeholder="nombre libro">
+          
+          <label for="NombreUsuarioL">Editorial del libro</label>
+          <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Editorial del libro">
+          
+          <label for="NombreUsuarioL">Numero de serie</label>
+          <input  [(ngModel)]="username" type="text" name=" username" placeholder="Nombre de serie">
+          
+          <label  for="CorreoR">Correo Electronico</label>
+          <input type="text"  [(ngModel)]="correo" name="correo" placeholder="Correo Electronico">
+  
+          <label for="ConstraseñaUsuarioR" >Matricula</label>
+          <input type="password"  [(ngModel)]="contra" name="contra" placeholder="Matricula">
+  
+          <label for="ConstraseñaUsuarioR">Contraseña</label>
+          <input type="password"  [(ngModel)]="rpassword" name="rpassword" placeholder="Contraseña">
+  
+          <button id="enviar">Registrar </button>
+          <a href="/iniciosesion">Regresar</a>
+      </form>
+  </div>
+  </ion-content>
+  
