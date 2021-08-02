@@ -7,8 +7,8 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 export class ApiService {
  constructor( private http: HttpClient) {}
 
-   getcomidas(){
-    return this.http.get('https://servicioema.herokuapp.com/servicios/comidas');
+   getlibros(){
+    return this.http.get('https://www.etnassoft.com/api/v1/get/?category=programacion');
   }
   getlogin(correo: any,contrasena:any):
   Observable<any> 

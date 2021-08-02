@@ -25,3 +25,25 @@
 #container a {
   text-decoration: none;
 }
+#enviar {
+  background-color: #b80f22;
+  border: none;
+  color: #000;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 100;
+  margin-right: auto;
+  margin-left: auto;
+}
+#enviar:hover {
+  opacity: 1;
+}
+#enviar:active {
+  transform: scale(0.95);
+}

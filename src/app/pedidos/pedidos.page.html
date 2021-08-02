@@ -6,25 +6,25 @@
     <h1 class="titulo">Pedidos</h1>
   <form #form="ngForm"(submit)="ngOnInit()">
           <label for="NombreUsuarioL">Nombre del libro</label>
-          <input type="text"  [(ngModel)]="apellido"name="apellido" placeholder="nombre libro">
+          <input type="text"  [(ngModel)]="nombrel"name="nombrel" placeholder="nombre libro">
           
           <label for="NombreUsuarioL">Editorial del libro</label>
-          <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Editorial del libro">
+          <input type="text"  [(ngModel)]="edil" name="edil" placeholder="Editorial del libro">
           
           <label for="NombreUsuarioL">Numero de serie</label>
-          <input  [(ngModel)]="username" type="text" name=" username" placeholder="Nombre de serie">
+          <input  [(ngModel)]="numl" type="text" name="numl" placeholder="Nombre de serie">
           
           <label  for="CorreoR">Correo Electronico</label>
           <input type="text"  [(ngModel)]="correo" name="correo" placeholder="Correo Electronico">
   
           <label for="ConstraseñaUsuarioR" >Matricula</label>
-          <input type="password"  [(ngModel)]="contra" name="contra" placeholder="Matricula">
+          <input type="text"  [(ngModel)]="matri" name="matri" placeholder="Matricula">
   
-          <label for="ConstraseñaUsuarioR">Contraseña</label>
-          <input type="password"  [(ngModel)]="rpassword" name="rpassword" placeholder="Contraseña">
+          <label for="ConstraseñaUsuarioR">Nombre alumno</label>
+          <input type="text"  [(ngModel)]="alumno" name="alumno" placeholder="Contraseña">
   
-          <button id="enviar">Registrar </button>
-          <a href="/iniciosesion">Regresar</a>
+          <button id="enviar">Pedir </button>
+          <a href="/home">Regresar</a>
       </form>
   </div>
   </ion-content>

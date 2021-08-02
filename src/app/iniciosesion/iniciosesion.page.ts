@@ -9,6 +9,7 @@ export class IniciosesionPage implements OnInit {
  mensajes:any[]=[];
  correo: any="";
  contra: any="";
+ 
   constructor( private servicioservice: ApiService) { }
   ngOnInit(): void {
     this.servicioservice.getlogin(this.correo,this.contra).subscribe( (post:any=[1])=> {

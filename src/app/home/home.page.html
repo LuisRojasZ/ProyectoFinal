@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <h1>Bliblioteca de la UPT</h1>
-    <ion-button slot="end">
+    <ion-button slot="end" href="/iniciosesion">
       Salir
     </ion-button>
   </ion-toolbar>
@@ -10,31 +10,22 @@
   
 
   <div id="container">
-    <h1>Saludos del mundo de la mazana</h1>
   </div>
   
   <ion-segment scrollable value="heart">
     <ion-segment-button value="home">
-      <ion-label>Libros de BD</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="heart">
-      <ion-label>Libros de programacion web</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="pin">
-      <ion-label>Libros de Frameworks</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="star">
-      <ion-label>Libros de Algoritmos</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="call">
-      <ion-label>Libros de hisortia del software</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="globe">
-      <ion-label>¿Donde encontrarlos?</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="basket">
-      <ion-label>Otros</ion-label>
+      <ion-label>Libros Actules De la biblioteca</ion-label>
     </ion-segment-button>
   </ion-segment>
 
+    <ul class="list-group">
+    <li *ngFor="let mensaje of mensajes" class="list-group-item">
+    <h2> Titulo del libro: {{mensaje.title}}</h2>
+    <p>Autor del libro: {{mensaje.author}}</p>
+     <p>Numero de Serie: {{mensaje.ID}}</p>
+    <a href="pedidos" id="enviar">Pedir libro</a>
+  </li>
+
+</ul>
 </ion-content>
+ 
