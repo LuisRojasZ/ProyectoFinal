@@ -6,7 +6,7 @@
     </ion-button>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="background">
   
 
   <div id="container">
@@ -22,10 +22,15 @@
     <li *ngFor="let mensaje of mensajes" class="list-group-item">
     <h2> Titulo del libro: {{mensaje.title}}</h2>
     <p>Autor del libro: {{mensaje.author}}</p>
-     <p>Numero de Serie: {{mensaje.ID}}</p>
-    <a href="pedidos" id="enviar">Pedir libro</a>
+    <p>Numero de Serie: {{mensaje.ID}}</p>
+    <center>
+      <a href="pedidos" id="enviar">Pedir libros</a>
+    </center>
+    
+    <br>
+    <ion-avatar>
+      <img src="https://th.bing.com/th/id/R.b16ac702a3fb0d49c49dc6c081549bdf?rik=eKnbh5lJoiA2vg&pid=ImgRaw&r=0">
+    </ion-avatar>
   </li>
-
 </ul>
 </ion-content>
- 

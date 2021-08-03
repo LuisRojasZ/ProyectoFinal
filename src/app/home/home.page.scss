@@ -1,49 +1,33 @@
 #container {
   text-align: center;
-
-  position: absolute;
+  background-color: #b80f22;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content.background {
+  --background: linear-gradient(#0000ff, #1cb5e0);
+  --color: #ffff;
+  --keyboard-offset: 0px;
+  --offset-bottom: 0px;
+  --offset-top: 0px;
+  --padding-bottom: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+  --padding-top: 0px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-#enviar {
-  background-color: #b80f22;
-  border: none;
-  color: #000;
+a{
+  background: linear-gradient(#bf00ff, #df013a);
+  color: #ffff;
   padding: 15px 15px;
   text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 16px;
-  opacity: 0.8;
-  cursor: pointer;
+  display: table-cell;
   border-radius: 20px;
-  margin-bottom: 100;
-  margin-right: auto;
-  margin-left: auto;
-}
-#enviar:hover {
-  opacity: 1;
-}
-#enviar:active {
-  transform: scale(0.95);
+  margin-bottom: 50;
+  border-radius: 20px;
+  padding: 10px 50px;
+  margin: 10px;
+  text-decoration: none;
 }

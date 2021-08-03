@@ -1,14 +1,25 @@
 .logincontainer{
     width: 400px;
     height: 700px;
-    background: #ffffff;
-    color: #000000;
+    background: #2E2E2E;
+  color: white;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+}
+ion-content.background {
+    --background: linear-gradient(#0000FF, #1cb5e0);
+    --color: #ffff;
+    --keyboard-offset: 0px;
+    --offset-bottom: 0px;
+    --offset-top: 0px;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
 }
 .logoUber{
     width: 100px;
@@ -36,11 +47,11 @@
 }
 .logincontainer input[type="text"]{
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffff;
     background: transparent;
     outline: none;
     height: 40px;
-    color: #000000;
+    color: #ffff;
     font-size: 16px;
 }
 .logincontainer input[type="password"]{
