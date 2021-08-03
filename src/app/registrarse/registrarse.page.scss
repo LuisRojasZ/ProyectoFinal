@@ -1,14 +1,25 @@
 .logincontainer{
     width: 400px;
     height: 700px;
-    background: #ffffff;
-    color: #000000;
+    background: #2E2E2E;
+    color: white;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
     padding: 70px 30px;
+}
+ion-content.background {
+    --background: linear-gradient(#0000ff, #1cb5e0);
+    --color: black;
+    --keyboard-offset: 0px;
+    --offset-bottom: 0px;
+    --offset-top: 0px;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
 }
 .logoUber{
     width: 100px;
@@ -74,11 +85,11 @@
 #hol{
     text-align: center;
     color: #14CF37;
- }
- #enviar{
+}
+#enviar{
 background-color: #b80f22;
 border: none;
-color: #000;
+color: #ffff;
 padding: 15px 32px;
 text-align: center;
 text-decoration: none;
@@ -98,5 +109,4 @@ opacity: 1;
 }
 #enviar:active{
 transform: scale(0.95);
-  
-  }
+}
